@@ -2,6 +2,7 @@ require 'jasmine-core'
 
 module JasmineRails
   class Engine < Rails::Engine
+	engine_name 'specs'
     isolate_namespace JasmineRails
 
     initializer :assets do |config|
